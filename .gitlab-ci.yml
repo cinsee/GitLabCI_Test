@@ -13,7 +13,7 @@ test:
     - python manage.py migrate
     - python manage.py collectstatic --noinput
   only:
-    - master
+    - main
 deploy:
   image: ruby:latest
   stage: deploy
@@ -25,4 +25,4 @@ deploy:
     name: main
     url: $HEROKU_APP_HOST
   only:
-    - master
+    - main
