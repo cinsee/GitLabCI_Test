@@ -1,0 +1,1 @@
+web: gunicorn GitLabCI_Test.wsgi
