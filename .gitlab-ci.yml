@@ -15,7 +15,7 @@ test:
     only:
       - master
 deploy:
-    image: ruby:lastest
+    image: ruby:latest
     stage: deploy
     before_script:
       - gem install dpl
